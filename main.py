@@ -1,14 +1,9 @@
-def factorial(n):
-    if n == 0 : 
-        return 1
-    else :
-        return n * factorial(n-1)
-    
+import argparse
 
-#def stringReverse(n)
-    
-    
 if __name__ == "__main__":
-var = int(raw_input("Factorial Value: "))
-print factorial(var)
-var = raw_input("St")
+	parser = argparse.ArgumentParser()
+	exclusiveGroup = parser.add_mutually_exclusive_group()
+	exclusiveGroup.add_argument('-c','--create',help='Create a new user in the directory')
+	exclusiveGroup.add_argument('-l','--list',action='store_true',help='List all users in directory')
+	exclusiveGroup.add_argument('-d','--delete',help='Delete user in directory')
+	parser.parse_args()
