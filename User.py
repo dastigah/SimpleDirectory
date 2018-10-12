@@ -7,4 +7,7 @@ class User(Object):
         self.phone = _phone
         self.address = _address
         
-    
+	def toString(self):
+		return 	self.name + '\n' \
+				self.phone + '\n' \
+				self.address 
