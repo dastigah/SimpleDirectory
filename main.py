@@ -1,6 +1,6 @@
 import argparse
 
-from User import addUser,deleteUser,listUsers,User			#TODO
+from User import addUser,deleteUser,listUsers,User,Address			#TODO
 from UserDirectory  import FileStorage, DBStorage #TODO
 
 

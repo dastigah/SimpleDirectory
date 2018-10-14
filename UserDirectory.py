@@ -2,11 +2,9 @@
 FileStorage will store users within a text file with the format given below:
 
 FORMAT:
-    START
     {NAME}
     {PHONE}
     {ADRESS}
-    END
 """
 class FileStorage(object):
     def __init__(self, _fileName):
