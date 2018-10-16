@@ -19,13 +19,19 @@ class FileStorage(object):
             print 'Unable to add user to file'
 
     def deleteUser(self,user):
-        pass #TODO
-
+        try
+            with open(self.fileName,'r') as filePtr:
+                lines = 
+        except IOError:
+            print 'Unable to delete user from file'
+            
     """ Returns a list of all Users """
     def getUsers(self,user):
         try:
             with open(self.fileName,'r') as filePtr:
                 lines = filePtr.readlines()
+                for i in len(lines):
+                    
                 #for line in lines.split():
                     #write code to read in b/t start
         except IOError:
